@@ -1,0 +1,43 @@
+<%- include('partials/header.ejs') %>
+
+
+  <body>
+    <div id="contact-container">
+      <div id="contactinfo">
+        <h2>Contact Information</h2>
+        <br>
+         <li>Tel:<br>437-559-6630</li>
+         <br>
+         <li>Email:<br>damonching66@gmail.com</li>
+         <br>
+         <li>Address:<br>123 Bonis Ave, Scarborough,ON, M1T 3W6</li>
+      </div>
+
+      <div id="contactform">
+        <h2>Contact Form</h2>
+        <br>
+        <form id="Form" action="mailto:damonching66@gmail.com" method="POST" enctype="text/plain">
+          <label for="first_name">First Name:</label>
+          <input type="text" id="first_name" name="first_name" placeholder="Damon"><br><br>
+
+          <label for="last_name">Last Name:</label>
+          <input type="text" id="last_name" name="last_name" placeholder="Ching"><br><br>
+
+          <label for="contact_number">Contact Number:</label>
+          <input type="text" id="contact_number" name="contact_number" placeholder="123 449 8860"><br><br>
+
+          <label for="email">Email Address:</label>
+          <input type="text" id="email" name="email" placeholder="abc@gmail.com"><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here"></textarea><br><br>
+
+          <input type="reset" value="Clear">
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+    <%- include('partials/light.ejs') %>
+      <%- include('partials/footer.ejs') %>
+  </body>
